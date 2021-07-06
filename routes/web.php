@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('auth.login');
 });
+Route::get('/admin_register', function () {
+    return view('auth.register');
+});
 
 Auth::routes();
 
